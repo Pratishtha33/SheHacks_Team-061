@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #fefefe;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    width: 95%;
+    margin: 50px auto;
+  }
+  .heading {
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 60px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  .card {
+    box-shadow:  30px 30px 85px #c3cbc1,
+             -30px -30px 85px #dad6d6;
+    border-radius: 30px;
+    width: 320px;
+    height: 400px;
+    background: #fff;
+    border: 2px solid rgb(51, 50, 50);
+    margin-bottom: 50px;
+    transition: 0.2s;
+
+    transform-style: preserve-3d;
+  transition: all 0.1s ease;
+    
+  }
+  
+  .card-header {
+    text-align: center;
+    padding: 40px 20px;
+    color: rgb(163, 163, 163);
+
+  }
+  #card header h3{ 
+    
+    
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 30px;
+    color: #c290be;
+
+  }
+   h3{
+    font-size: 30px;
+    color: #A53860;
+    font-family: 'RocknRoll One', sans-serif;
+  } 
+  
+  .card-body {
+    
+  padding: 5px 5px;
+    padding-top: 0mm;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'RocknRoll One', sans-serif;
+  }
+  
+  .card-body .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #047981, #ebeff0);
+    
+    margin-top: 30px;
+
+    text-decoration: none;
+    padding: 10px 5px;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    transform-style: preserve-3d;
+    box-shadow: 0 0 40px -10px rgba(15, 15, 15, 0.25);
+   /* transform: rotateY(180deg);*/
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .container {
+      width: 100%;
+    }
+  
+    .heading-box {
+      background: lightseagreen;
+      padding: 20px;
+      font-size: 100px;
+    }
+  
+    .card {
+      width:85%;
+    }
+  }
